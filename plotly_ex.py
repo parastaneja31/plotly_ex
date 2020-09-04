@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Sep  3 14:27:36 2020
-
-@author: Paras.Taneja
-"""
-
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
