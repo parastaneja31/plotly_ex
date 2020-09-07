@@ -18,6 +18,8 @@ trace3 = go.Bar(x=pv.index, y=pv[('Quantity', 'presented')], name='Presented')
 trace4 = go.Bar(x=pv.index, y=pv[('Quantity', 'won')], name='Won')
 
 app = dash.Dash()
+server = app.server
+
 app.layout = html.Div(children=[
     html.H1(children='Sales Funnel Report'),
     html.Div(children='''National Sales Funnel Report.'''),
