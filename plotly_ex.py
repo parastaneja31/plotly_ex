@@ -17,7 +17,8 @@ trace2 = go.Bar(x=pv.index, y=pv[('Quantity', 'pending')], name='Pending')
 trace3 = go.Bar(x=pv.index, y=pv[('Quantity', 'presented')], name='Presented')
 trace4 = go.Bar(x=pv.index, y=pv[('Quantity', 'won')], name='Won')
 
-app = dash.Dash()
+app = dash.Dash(__name__, external_stylesheets=df)
+
 server = app.server
 
 app.layout = html.Div(children=[
